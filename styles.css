@@ -264,7 +264,6 @@
 }
 .reviews {
   position: relative;
-  z-index: 1;
   bottom: 100px;
   width: 1120px;
   height: 280px;
@@ -280,19 +279,17 @@
     align-items: center;
     justify-content: center;
     bottom: 60px;
-    z-index: 4;
-    margin-top: 45px;
+    margin-top: 50px;
   }
 }
-.blue {
+.visit-desktop {
   display: none;
 }
 
 @media screen and (max-width: 1024px) {
-  .blue {
+  .visit-desktop {
     position: relative;
-    z-index: 5;
-    bottom: 60px;
+    bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,7 +297,7 @@
     width: 640px;
     height: 180px;
   }
-  .blue span {
+  .visit-desktop span {
     display: block;
     width: 520px;
     font-style: normal;
@@ -327,46 +324,44 @@
   background-color: white;
   box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
 }
-.review__text {
+.review__card {
   display: flex;
   justify-content: space-between;
   width: 460px;
   margin-top: 20px;
 }
-.review__text_avatar_men {
+.review__card_avatar_men {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-2.png");
   width: 100px;
   height: 100px;
 }
-.review__text_avatar_women {
+.review__card_avatar_women {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-1.png");
   width: 100px;
   height: 100px;
 }
-.review__text_name {
+.review__card_name {
   position: relative;
-  z-index: 1;
   width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
 }
-.review__text_name span:nth-child(1) {
+.review__card_name span:nth-child(1) {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
 }
-.review__text_name span:nth-child(2) {
+.review__card_name span:nth-child(2) {
   color: #1967FA;
   font-weight: 600;
   font-size: 14px;
   line-height: 30px;
 }
-.review__text_img {
+.review__card_img {
   position: relative;
-  z-index: 2;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -380,6 +375,278 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+.wokflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1165px;
+  height: 415px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wokflow {
+    width: 640px;
+    height: 745px;
+    align-items: center;
+  }
+}
+.head-title {
+  position: relative;
+  top: -30px;
+  width: 1120px;
+}
+.head-title span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.head-title p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1967FA;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+
+@media screen and (max-width: 1024px) {
+  .head-title {
+    width: 520px;
+  }
+  .head-title p {
+    left: 0;
+  }
+}
+.blocks {
+  position: relative;
+  display: flex;
+}
+.blocks .step1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: -35px;
+}
+.blocks .step1_content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.blocks .step1_content_text {
+  display: flex;
+  flex-direction: column;
+}
+.blocks .step1_content_text span:nth-child(1) {
+  width: 200px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.blocks .step1_content_text span:nth-child(2) {
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #1967FA;
+  text-transform: uppercase;
+}
+.blocks .step1_content_img {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.blocks .step1 .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.blocks .step1 .decor {
+  position: absolute;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  width: 25px;
+  height: 25px;
+  right: -5px;
+  bottom: -5px;
+}
+.blocks .step1::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 1px;
+  border-top: 2px dashed #1967FA;
+  right: -73px;
+  top: 50%;
+}
+.blocks .step2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  left: 77px;
+  bottom: 10px;
+}
+.blocks .step2_content {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 40px;
+}
+.blocks .step2_content_text {
+  display: flex;
+  flex-direction: column;
+}
+.blocks .step2_content_text span:nth-child(1) {
+  width: 200px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.blocks .step2_content_text span:nth-child(2) {
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #1967FA;
+  text-transform: uppercase;
+}
+.blocks .step2_content_img {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.blocks .step2 .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.blocks .step2 .decor {
+  position: absolute;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  width: 25px;
+  height: 25px;
+  right: -5px;
+  bottom: -5px;
+}
+.blocks .step2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 1px;
+  border-top: 2px dashed #1967FA;
+  right: -73px;
+  top: 50%;
+}
+.blocks .step3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  bottom: -30px;
+  right: -154px;
+}
+.blocks .step3_content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.blocks .step3_content_text {
+  display: flex;
+  flex-direction: column;
+}
+.blocks .step3_content_text span:nth-child(1) {
+  width: 200px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.blocks .step3_content_text span:nth-child(2) {
+  width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #1967FA;
+  text-transform: uppercase;
+}
+.blocks .step3_content_img {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 36px;
+}
+.blocks .step3 .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.blocks .step3 .decor {
+  position: absolute;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  width: 25px;
+  height: 25px;
+  right: -5px;
+  bottom: -5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .blocks {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 640px;
+  }
+  .blocks .step1, .blocks .step2, .blocks .step3 {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 520px;
+    height: 180px;
+  }
+  .blocks .step1_content, .blocks .step2_content, .blocks .step3_content {
+    width: 440px;
+  }
+  .blocks .step1 .text, .blocks .step2 .text, .blocks .step3 .text {
+    width: 440px;
+  }
+  .blocks .step1::after, .blocks .step2::after {
+    z-index: 5;
+    width: 55px;
+    right: 0;
+    left: 20px;
+    top: 114%;
+    transform: rotate(90deg);
+  }
+}
+.wokflow-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 220px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
 }
 
 * {

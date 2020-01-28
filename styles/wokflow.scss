@@ -1,0 +1,279 @@
+.wokflow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1165px;
+    height: 415px;
+    margin-top: 60px;
+}
+
+@include small_device {
+    .wokflow {
+        width: 640px;
+        height: 745px;
+        align-items: center;
+    }
+}
+
+.head-title {
+    position: relative;
+    top:-30px;
+    width: 1120px;
+    & span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    & p {
+        position: absolute;
+        left: -40px;
+        width: 80px;
+        height: 2px;
+        background-color: $main-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+}
+
+@include small_device {
+    .head-title {
+        width: 520px;
+        & p {
+            left: 0;
+        }
+    }
+}
+
+.blocks {
+    position: relative;
+    display: flex;
+
+   
+    & .step1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: -35px;
+        &_content {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                & span:nth-child(1) {
+                    width: 200px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                & span:nth-child(2) {
+                    width: 200px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: $main-blue;
+                    text-transform: uppercase;
+                }
+            }
+            &_img {
+                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        & .text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .decor {
+            position: absolute;
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+            width: 25px;
+            height: 25px;
+            right: -5px;
+            bottom: -5px;
+        }
+    }
+    & .step1::after {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 1px;
+        border-top: 2px dashed $main-blue;
+        right: -73px;
+        top: 50%;
+    }
+    & .step2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: 77px;
+        bottom: 10px;
+        &_content {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin-top: 40px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                & span:nth-child(1) {
+                    width: 200px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                & span:nth-child(2) {
+                    width: 200px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: $main-blue;
+                    text-transform: uppercase;
+                }
+            }
+            &_img {
+                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        & .text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .decor {
+            position: absolute;
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+            width: 25px;
+            height: 25px;
+            right: -5px;
+            bottom: -5px;
+        }
+    }
+    & .step2::after {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 1px;
+        border-top: 2px dashed $main-blue;
+        right: -73px;
+        top: 50%;
+
+    }
+    & .step3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: -30px;
+        right: -154px;
+        &_content {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                & span:nth-child(1) {
+                    width: 200px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                & span:nth-child(2) {
+                    width: 200px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: $main-blue;
+                    text-transform: uppercase;
+                }
+            }
+            &_img {
+                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 36px;
+            }
+        }
+        & .text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .decor {
+            position: absolute;
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+            width: 25px;
+            height: 25px;
+            right: -5px;
+            bottom: -5px;
+        }
+    }
+}
+@include small_device {
+    .blocks {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 640px;
+        & .step1,
+        & .step2,
+        & .step3 {
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 520px;
+            height: 180px;
+            &_content {
+                width: 440px;
+            }
+            & .text {
+                width: 440px;
+            }
+        }
+        & .step1::after,
+        & .step2::after {
+            z-index: 5;
+            width: 55px;
+            right: 0;
+            left: 20px;
+            top: 114%;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.wokflow-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
