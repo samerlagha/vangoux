@@ -1,7 +1,5 @@
-$lg:1024px;
-
-@mixin for-large-up {
-    @media screen  and (min-width:$lg){
+@mixin small_device {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }

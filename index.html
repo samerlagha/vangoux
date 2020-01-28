@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
+
 <body>
-    <!--Header-->
-    <header class="page-header">
-        <div class="container">
+    <div class="page">
+        <!--Header-->
+        <section class="page-header">
             <div class="logo">
-                <img class="logo__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="logo header"></img>
-                <span class="logo__title">VanGoux</span>
+                <span class="logo_img"></span>
+                <span class="logo_text">VanGoux</span>
             </div>
-            <ul class="page-header__navigation">
-                <li class="nav-item"><a href="#work" class="nav-link">How it works</a></li>
-                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#use" class="nav-link">Use cases</a></li>
-                <li class="nav-item"><a href="#demo" class="nav-link">Schedule a demo</a></li>
+            <div class="page-header__navigation">
+                <ul class="page-header__navigation_lists">
+                    <li class="page-header__navigation_list">How it Works</li>
+                    <li class="page-header__navigation_list">Features</li>
+                    <li class="page-header__navigation_list">Use cases</li>
+                    <li class="page-header__navigation_list">Schedule a demo</li>
+                </ul>
+                <button class="page-header__navigation_blue-button">UPLOAD SKETCH</button>
+            </div>
+        </section>
+
+        <!--headline-->
+        <section class="headline">
+            <div class='headline-text'>
+                <span class="headline__title">Launch websites directly from Sketch</span>
+                <span class="headline__description">Create pixel perfect websites, landing pages & portfolios directly from your Sketch designs</span>
+                <button class="headline__upload-btn">Upload Your Sketch File</button>
+            </div>
+            <div class="headline__img"></div>
+        </section>
+
+        <!--reviews-->
+
+        <section class="reviews">
+            <div class="review men">
+                 
+                <div class="review men">
+                    <div class="review__text">
+                        <div class="review__text_avatar_men"></div>
+                        <div class="review__text_name">
+                            <span>John Doe</span>
+                            <span>CEO, PrettyDopeDesigns</span>
+                        </div>
+                        <div class="review__text_img"></div>
+                    </div>
+                    <span class="review__senior">“Our senior frontend developer was 70% faster in building React.js components thanks to VanGoux!”</span>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="review__text">
+                    <div class="review__text_avatar_women"></div>
+                    <div class="review__text_name">
+                        <span>Jane Goodman</span>
+                        <span>Founder, ImpactNation</span>
+                    </div>
+                    <div class="review__text_img"></div>
+                </div>
+                <span class="review__senior">“It was awesome to see VanGoux turn our MVP designs into code within minutes.”</span>
+            </div>
+
+        </section>
+  <!--Footer-->
+        <footer class="page-footer">
+            <div class="footer-logo">
+                <div class="footer-logo_img"></div>
+                <span>Site made with VanGoux</span>
+            </div>
+            <ul class="footer-links">
+                <li>Contact</li>
+                <li>Feedback</li>
+                <li>Join our Slack</li>
+                <li>Terms</li>
             </ul>
-            <button class="page-header__upload-btn">Upload Sketch</button>
-        </div>
-    </header>
-
-    <!--Footer-->
-
-    <footer class="page-footer">
-        <div class="footer-logo">
-            <img class="footer-logo__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="footer logo"></img>
-            <div class="footer-logo__title">Site made with VanGoux</div>
-        </div>
-        <ul class="footer__nav">
-            <li class="nav-item"><a href="#" class="nav-item__link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Feedback</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Join our Slack</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Terms</a></li>
-        </ul>
-        <div class="footer__icons">
-            <a href="#" class="footer__icons-facebook"><img class="icon-facebook" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconFacebook.png" alt="facebook"></a>
-            <a href="#" class="footer__icons-insta"><img class="icon-instagram" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconInstagram.png" alt="insta"></a>
-        </div>
-        <img class="footer__logo-man" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/VincentIllustration.png" alt="footer logo man">
-    </footer>
-
+            <div class="footer-img">
+                <div class="facebook"></div>
+                <div class="instagram"></div>
+                <div class="Vinsent"></div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
