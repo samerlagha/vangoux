@@ -1,0 +1,219 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 135px;
+    width: 1165px;
+    height: 495px;
+    &__list {
+        display: flex;
+        width: 800px;
+        height: 375px;
+    }
+}
+
+@include small_device {
+    .features {
+        width: 640px;
+        height: 850px;
+        align-items: center;
+    }
+}
+
+.features__list {
+    position: relative;
+    width: 1120px;
+    ;
+    .block2 {
+        position: relative;
+        top: 40px;
+        left: 64px;
+    }
+    .block3 {
+        position: relative;
+        top: 80px;
+        right: -158px;
+    }
+    .block1 {
+        position: relative;
+        display: flex;
+        &_img {
+            display: flex;
+            width: 320px;
+            height: 120px;
+            background-color: #F3F7FF;
+        }
+        &_text {
+            width: 240px;
+            height: 90px;
+            margin: 40px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    .block2 {
+        position: relative;
+        display: flex;
+        &_img {
+            display: flex;
+            width: 320px;
+            height: 120px;
+            background-color: #F3F7FF;
+        }
+        &_text {
+            width: 240px;
+            height: 90px;
+            margin: 40px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    .block3 {
+        position: relative;
+        display: flex;
+        &_img {
+            display: flex;
+            width: 320px;
+            height: 120px;
+            background-color: #F3F7FF;
+        }
+        &_text {
+            width: 240px;
+            height: 90px;
+            margin: 40px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
+
+@include small_device {
+    .features__list {
+        width: 640px;
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .block2,
+        .block3,
+        .block1 {
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 520px;
+            height: 200px;
+            &_img {
+                width: 520px;
+                height: 80px;
+            }
+            &_text {
+                width: 440px;
+                margin: 30px 40px;
+            }
+        }
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 290px;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
+
+.features-text {
+    position: relative;
+    width: 1120px;
+    & span {
+        font-style: normal;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    & p {
+        position: absolute;
+        left: -40px;
+        width: 80px;
+        height: 2px;
+        background-color: $main-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+}
+
+@include small_device {
+    .features-text {
+        top: 0;
+        width: 520px;
+        & p {
+            left: 0;
+        }
+    }
+}
+
+.pencilAndLinage {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidPixelPerfect.png');
+    background-size: auto;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.flexible {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidFlexibleResponsive.png');
+    background-size: auto;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.complete {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidReusableComponents.png');
+    background-size: auto;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+@include small_device {
+    .pencilAndLinage,
+    .flexible,
+    .complete {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.pixel {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    width: 160px;
+    margin: 20px;
+}
+
+@include small_device {
+    .pixel {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+.decor {
+    position: absolute;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+    width: 25px;
+    height: 25px;
+    right: -5px;
+    bottom: -5px;
+}

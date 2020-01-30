@@ -1,0 +1,137 @@
+.stories{
+    width: 1160px;
+    height: 420px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stories-content{
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@include small_device {
+    .stories-content {
+        width: 520px;
+        height: 609px;
+        & .story-card:nth-child(1) {
+            margin-bottom: 40px;
+        }
+    }
+}
+@include small_device{
+
+    .stories{
+
+        width:520px;
+        height: 719px;
+        align-items: center;
+    }
+
+    .stories-text {
+        width: 520px;
+        & p {
+            left: 0;
+        }
+    }
+}
+
+
+
+.stories-text{
+
+    position: relative;
+    width: 1120px;
+  
+
+    & span{
+
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+
+
+     & p{
+
+        position: absolute;
+        left: -40px;
+        width: 80px;
+        height: 2px;
+        background-color: $main-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+     }
+}
+
+
+@include small_device{
+
+    .stories-text {
+        width: 520px;
+        & p {
+            left: 0;
+        }
+    }
+}
+
+
+.story-card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:480px;
+    height: 300px;
+
+    &__img{
+
+        display: flex;
+        align-items: center;
+
+        & span{
+
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 40px;
+            width: 420px;
+            margin-left: 20px;
+        }
+    }
+
+    &__text{
+
+        width: 420px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & span {
+            width: 420px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
+
+.image {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconWhoWeAre.png');
+    width: 40px;
+    height: 33px;
+}
+
+
+.night {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconStarryNight.png');
+    width: 40px;
+    height: 33px;
+}
+
+.special{
+    text-decoration: underline;
+    cursor: pointer;
+}

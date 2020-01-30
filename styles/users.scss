@@ -1,0 +1,111 @@
+.who {
+    position: relative;
+    width: 1120px;
+    & span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    & p {
+        position: absolute;
+        left: -40px;
+        width: 80px;
+        height: 2px;
+        background-color: $main-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+}
+
+@include small_device {
+    .who {
+        width: 520px;
+    }
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1160px;
+    height: 450px;
+    margin-top: 120px;
+}
+
+@include small_device {
+    .users {
+        width: 640px;
+        height: 710px;
+        align-items: center;
+        justify-content: space-between;
+        & p {
+            left: 0;
+        }
+    }
+}
+
+.user-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1120px;
+    height: 340px;
+    & .one,
+    & .two,
+    & .three,
+    & .four,
+    & .five,
+    & .six {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & span:nth-child(1) {
+            width: 320px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 40px;
+            color: $main-blue;
+            text-transform: uppercase;
+        }
+        & span:nth-child(2) {
+            width: 320px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@include small_device {
+    .user-blocks {
+        width: 520px;
+        height: 610px;
+        margin-left: 0;
+        & .one,
+        & .two,
+        & .three,
+        & .four,
+        & .five,
+        & .six {
+            width: 250px;
+            height: 190px;
+            & span:nth-child(2),
+            & span:nth-child(1) {
+                width: 210px;
+            }
+        }
+    }
+}
+
+.user {
+    width: 360px;
+    height: 160px;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    background-color: white;
+    
+}

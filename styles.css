@@ -649,6 +649,667 @@
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
 }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 135px;
+  width: 1165px;
+  height: 495px;
+}
+.features__list {
+  display: flex;
+  width: 800px;
+  height: 375px;
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    width: 640px;
+    height: 850px;
+    align-items: center;
+  }
+}
+.features__list {
+  position: relative;
+  width: 1120px;
+}
+.features__list .block2 {
+  position: relative;
+  top: 40px;
+  left: 64px;
+}
+.features__list .block3 {
+  position: relative;
+  top: 80px;
+  right: -158px;
+}
+.features__list .block1 {
+  position: relative;
+  display: flex;
+}
+.features__list .block1_img {
+  display: flex;
+  width: 320px;
+  height: 120px;
+  background-color: #F3F7FF;
+}
+.features__list .block1_text {
+  width: 240px;
+  height: 90px;
+  margin: 40px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.features__list .block2 {
+  position: relative;
+  display: flex;
+}
+.features__list .block2_img {
+  display: flex;
+  width: 320px;
+  height: 120px;
+  background-color: #F3F7FF;
+}
+.features__list .block2_text {
+  width: 240px;
+  height: 90px;
+  margin: 40px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.features__list .block3 {
+  position: relative;
+  display: flex;
+}
+.features__list .block3_img {
+  display: flex;
+  width: 320px;
+  height: 120px;
+  background-color: #F3F7FF;
+}
+.features__list .block3_text {
+  width: 240px;
+  height: 90px;
+  margin: 40px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .features__list {
+    width: 640px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .features__list .block2,
+.features__list .block3,
+.features__list .block1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 520px;
+    height: 200px;
+  }
+  .features__list .block2_img,
+.features__list .block3_img,
+.features__list .block1_img {
+    width: 520px;
+    height: 80px;
+  }
+  .features__list .block2_text,
+.features__list .block3_text,
+.features__list .block1_text {
+    width: 440px;
+    margin: 30px 40px;
+  }
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 290px;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
+
+.features-text {
+  position: relative;
+  width: 1120px;
+}
+.features-text span {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.features-text p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1967FA;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+
+@media screen and (max-width: 1024px) {
+  .features-text {
+    top: 0;
+    width: 520px;
+  }
+  .features-text p {
+    left: 0;
+  }
+}
+.pencilAndLinage {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidPixelPerfect.png");
+  background-size: auto;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.flexible {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidFlexibleResponsive.png");
+  background-size: auto;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.complete {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidReusableComponents.png");
+  background-size: auto;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pencilAndLinage,
+.flexible,
+.complete {
+    width: 80px;
+    height: 80px;
+  }
+}
+.pixel {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  width: 160px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pixel {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+.decor {
+  position: absolute;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  width: 25px;
+  height: 25px;
+  right: -5px;
+  bottom: -5px;
+}
+
+.who {
+  position: relative;
+  width: 1120px;
+}
+.who span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.who p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1967FA;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+
+@media screen and (max-width: 1024px) {
+  .who {
+    width: 520px;
+  }
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1160px;
+  height: 450px;
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .users {
+    width: 640px;
+    height: 710px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .users p {
+    left: 0;
+  }
+}
+.user-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1120px;
+  height: 340px;
+}
+.user-blocks .one, .user-blocks .two, .user-blocks .three, .user-blocks .four, .user-blocks .five, .user-blocks .six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-blocks .one span:nth-child(1), .user-blocks .two span:nth-child(1), .user-blocks .three span:nth-child(1), .user-blocks .four span:nth-child(1), .user-blocks .five span:nth-child(1), .user-blocks .six span:nth-child(1) {
+  width: 320px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  color: #1967FA;
+  text-transform: uppercase;
+}
+.user-blocks .one span:nth-child(2), .user-blocks .two span:nth-child(2), .user-blocks .three span:nth-child(2), .user-blocks .four span:nth-child(2), .user-blocks .five span:nth-child(2), .user-blocks .six span:nth-child(2) {
+  width: 320px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-blocks {
+    width: 520px;
+    height: 610px;
+    margin-left: 0;
+  }
+  .user-blocks .one, .user-blocks .two, .user-blocks .three, .user-blocks .four, .user-blocks .five, .user-blocks .six {
+    width: 250px;
+    height: 190px;
+  }
+  .user-blocks .one span:nth-child(2), .user-blocks .one span:nth-child(1), .user-blocks .two span:nth-child(2), .user-blocks .two span:nth-child(1), .user-blocks .three span:nth-child(2), .user-blocks .three span:nth-child(1), .user-blocks .four span:nth-child(2), .user-blocks .four span:nth-child(1), .user-blocks .five span:nth-child(2), .user-blocks .five span:nth-child(1), .user-blocks .six span:nth-child(2), .user-blocks .six span:nth-child(1) {
+    width: 210px;
+  }
+}
+.user {
+  width: 360px;
+  height: 160px;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  background-color: white;
+}
+
+.purposes {
+  height: 310px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .purposes {
+    align-items: center;
+    height: 610px;
+  }
+}
+.purpose-text {
+  position: relative;
+  width: 1160px;
+}
+.purpose-text span {
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.purpose-text p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1967FA;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+
+@media screen and (max-width: 1024px) {
+  .purpose-text {
+    width: 520px;
+  }
+  .purpose-text p {
+    left: 0;
+  }
+}
+.purpose-blocks {
+  width: 1120px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.purpose-blocks .purpose {
+  width: 540px;
+  height: 80px;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .purpose-blocks {
+    width: 520px;
+    height: 420px;
+  }
+}
+.make {
+  display: flex;
+  align-items: center;
+}
+.make_image {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidRealisticPrototype.png");
+}
+.make span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  width: 420px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .make {
+    align-self: center;
+  }
+}
+.build {
+  display: flex;
+  align-items: center;
+}
+.build_image {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidMVP.png");
+}
+.build span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  width: 420px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .build {
+    align-self: center;
+  }
+}
+.create {
+  display: flex;
+}
+.create_image {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidLandingPage.png");
+}
+.create span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  width: 420px;
+  margin-left: 20px;
+}
+
+.generate {
+  display: flex;
+}
+.generate_image {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidDesignSystem.png");
+}
+.generate span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  width: 420px;
+  margin-left: 20px;
+}
+
+.consultation {
+  position: relative;
+  display: flex;
+  background-color: #1967FA;
+  width: 1440px;
+  height: 450px;
+  margin-top: 120px;
+}
+.consultation__title {
+  position: relative;
+}
+.consultation__title span {
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+.consultation__title p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: white;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+.consultation__description {
+  display: inline-block;
+  width: 620px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.consultation__button {
+  width: 320px;
+  height: 50px;
+  background-color: white;
+  color: #1967FA;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  text-transform: uppercase;
+}
+.consultation_img {
+  position: absolute;
+  right: 7px;
+  top: 20px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationWhiteglove.png");
+  background-position: center;
+  width: 599px;
+  height: 546px;
+}
+
+@media screen and (max-width: 1024px) {
+  .consultation {
+    width: 640px;
+    align-items: center;
+    justify-content: center;
+  }
+  .consultation__title {
+    width: 520px;
+  }
+  .consultation__title p {
+    left: 0;
+    bottom: -20px;
+  }
+  .consultation_img {
+    display: none;
+  }
+  .consultation__description {
+    width: 520px;
+  }
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+  margin-left: 160px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin: 0;
+    height: 340px;
+  }
+}
+.stories {
+  width: 1160px;
+  height: 420px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stories-content {
+  display: flex;
+  width: 1110px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .stories-content {
+    width: 520px;
+    height: 609px;
+  }
+  .stories-content .story-card:nth-child(1) {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .stories {
+    width: 520px;
+    height: 719px;
+    align-items: center;
+  }
+
+  .stories-text {
+    width: 520px;
+  }
+  .stories-text p {
+    left: 0;
+  }
+}
+.stories-text {
+  position: relative;
+  width: 1120px;
+}
+.stories-text span {
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.stories-text p {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 2px;
+  background-color: #1967FA;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+
+@media screen and (max-width: 1024px) {
+  .stories-text {
+    width: 520px;
+  }
+  .stories-text p {
+    left: 0;
+  }
+}
+.story-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: 300px;
+}
+.story-card__img {
+  display: flex;
+  align-items: center;
+}
+.story-card__img span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  width: 420px;
+  margin-left: 20px;
+}
+.story-card__text {
+  width: 420px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.story-card__text span {
+  width: 420px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.image {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconWhoWeAre.png");
+  width: 40px;
+  height: 33px;
+}
+
+.night {
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconStarryNight.png");
+  width: 40px;
+  height: 33px;
+}
+
+.special {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Muli", Arial, sans-serif;
