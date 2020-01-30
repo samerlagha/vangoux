@@ -59,7 +59,7 @@
     &_img{
 
         position: absolute;
-        // z-index: 2;
+         z-index: 2;
         right: 7px;
         top: 20px;
         background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationWhiteglove.png');
@@ -93,7 +93,7 @@
 
 .main {
     position: relative;
-    // z-index: 3;
+     z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

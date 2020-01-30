@@ -33,6 +33,7 @@
     }
 
     .stories-text {
+    
         width: 520px;
         & p {
             left: 0;
@@ -43,13 +44,15 @@
 
 
 .stories-text{
-
+    top: -25px;
     position: relative;
     width: 1120px;
   
 
     & span{
 
+        font-style: normal;
+        font-weight: normal;
         font-size: 30px;
         line-height: 60px;
         text-transform: uppercase;
@@ -93,7 +96,7 @@
         align-items: center;
 
         & span{
-
+            font-style: normal;
             font-weight: 600;
             font-size: 20px;
             line-height: 40px;

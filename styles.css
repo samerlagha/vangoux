@@ -172,6 +172,7 @@
 }
 .headline {
   position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   width: 1120px;
@@ -180,6 +181,7 @@
 }
 .headline__img {
   position: relative;
+  z-index: 1;
   right: 60px;
   min-width: 599px;
   height: 502px;
@@ -197,6 +199,7 @@
 }
 .headline__description {
   position: relative;
+  z-index: 3;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -264,6 +267,7 @@
 }
 .reviews {
   position: relative;
+  z-index: 1;
   bottom: 100px;
   width: 1120px;
   height: 280px;
@@ -279,6 +283,7 @@
     align-items: center;
     justify-content: center;
     bottom: 60px;
+    z-index: 4;
     margin-top: 50px;
   }
 }
@@ -289,6 +294,7 @@
 @media screen and (max-width: 1024px) {
   .visit-desktop {
     position: relative;
+    z-index: 5;
     bottom: 50px;
     display: flex;
     align-items: center;
@@ -342,6 +348,7 @@
 }
 .review__card_name {
   position: relative;
+  z-index: 1;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -362,6 +369,7 @@
 }
 .review__card_img {
   position: relative;
+  z-index: 2;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -395,7 +403,7 @@
 }
 .head-title {
   position: relative;
-  top: -30px;
+  top: -25px;
   width: 1120px;
 }
 .head-title span {
@@ -1152,6 +1160,7 @@
 }
 .consultation_img {
   position: absolute;
+  z-index: 2;
   right: 7px;
   top: 20px;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationWhiteglove.png");
@@ -1182,6 +1191,7 @@
 }
 .main {
   position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1229,6 +1239,7 @@
   }
 
   .stories-text {
+    top: -25px;
     width: 520px;
   }
   .stories-text p {
