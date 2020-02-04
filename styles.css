@@ -182,7 +182,7 @@
 .headline__img {
   position: relative;
   z-index: 1;
-  right: 60px;
+  right: 79px;
   min-width: 599px;
   height: 502px;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationMain.png");
@@ -1239,7 +1239,6 @@
   }
 
   .stories-text {
-    top: -25px;
     width: 520px;
   }
   .stories-text p {
@@ -1247,10 +1246,13 @@
   }
 }
 .stories-text {
+  top: -25px;
   position: relative;
   width: 1120px;
 }
 .stories-text span {
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
   line-height: 60px;
   text-transform: uppercase;
@@ -1284,6 +1286,7 @@
   align-items: center;
 }
 .story-card__img span {
+  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 40px;
@@ -1332,6 +1335,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  margin: auto;
   height: 100%;
   background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
   background-repeat: no-repeat;
