@@ -1,0 +1,21 @@
+.visit{
+    width: 100%;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png');
+height: 180px;
+display: flex;
+align-items: center;
+@include for-large-up {
+    display: none;
+}
+&__description{
+    color: $text-color-white;
+    font-size: 20px;
+line-height: 40px;
+text-transform: uppercase;
+font-weight: 700;
+max-width: 520px;
+text-align: center;
+padding: 30px 60px;
+
+}
+}

@@ -1,290 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>VanGoux</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="page-header">
-        <div class="container">
-            <div class="logo">
-                <img class="logo__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="logo header"></img>
-                <div class="logo__title">VanGoux</div>
+    <div class="page-container">
+    <div class="page">
+<header class="page-header">
+<div class="page-header__logo logo">
+<img class="logo__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="Logo">
+<span class="logo__name">VanGoux</span>
+</div>
+<nav class="page-header__navigation navigation">
+  <a href="#" class="navigation__menulink">How it works</a>
+  <a href="#" class="navigation__menulink">Features</a>
+  <a href="#" class="navigation__menulink">Use cases</a>
+  <a href="#" class="navigation__menulink">Schedule a demo</a>
+</nav>
+<button class="page-header__upload-btn">Upload Sketch</button>
+
+</header>
+ <!-- HeadLine -->
+ <section class="headline">
+<div class="headline__content">
+<h1 class="headline__title">Launch websites directly  from Sketch</h1>
+<p class="headline__description">Create pixel perfect websites, landing pages & portfolios directly from your Sketch designs</p>
+<button class="headline__upload-btn">See VanGoux in action</button>
+</div>
+<img class="headline__illustration"src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationMain.png" alt="IllustraitionMain">
+ </section>
+  <!-- PleaseVisit -->
+  <section class="visit">
+<h2 class="visit__description">Please visit our desktop site to upload your Sketch designs</h2>
+  </section>
+  <!-- Reviews -->
+  <section class="reviews">
+<div class="reviews__review review">
+<div class="review__author">
+  <img class="review__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-2.png" alt="TestimonialPicture">
+  <div class="review__author-info">
+    <p class="review__author-name">John Doe</p>
+    <p class="review__author-description">CEO, PrettyDopeDesigns</p>
+  </div>
+  <img class="review__quote" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png" alt="illustraitionQuote">
+</div>
+<p class="review__text">
+  “Thanks to VanGoux, our senior frontend developer was 70% faster in building React.js components!”
+</p>
+</div>
+<div class="reviews__review review">
+  <div class="review__author">
+    <img class="review__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-1.png" alt="TestimonialPictureGirl">
+    <div class="review__author-info">
+      <p class="review__author-name">Jane Goodman</p>
+      <p class="review__author-description">Founder, ImpactNation</p>
+    </div>
+    <img class="review__quote" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png" alt="illustraitionQuote">
+  </div>
+  <p class="review__text">
+    “It was awesome to see VanGoux turn our MVP designs into code within minutes.”
+  </p>
+  </div>
+  </section>
+<!-- Workflow -->
+<section class="workflow">
+<h1 class="workflow__title">How VanGoux works</h1>
+<div class="workflow__line"></div>
+<div class="workflow__workflow-content">
+<div class="workflow__workflow-step workflow-step">
+<h4 class="workflow-step__title">Step 1 </h4>
+<h3 class="workflow-step__subtitle">Upload Sketch</h3>
+<p class="workflow-step__text">Upload design for your site, landing page or portfolio</p>
+<img class="workflow-step__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUpload.png" alt="IconUpload">
+<img class="workflow-step__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
+</div>
+<div class="workflow-step__connector-line"></div>
+<div class="workflow__workflow-step workflow-step">
+  <h4 class="workflow-step__title">Step 2 </h4>
+  <h3 class="workflow-step__subtitle">Publish website</h3>
+  <p class="workflow-step__text">You get a publicly shareable link for your website</p>
+  <img class="workflow-step__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png" alt="IconUpload">
+  <img class="workflow-step__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
+  </div>
+  <div class="workflow-step__connector-line"></div>
+  <div class="workflow__workflow-step workflow-step">
+    <h4 class="workflow-step__title">Step 3 </h4>
+    <h3 class="workflow-step__subtitle">Add domain</h3>
+    <p class="workflow-step__text">Host it on a new or existing domain name</p>
+    <img class="workflow-step__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png" alt="IconUpload">
+    <img class="workflow-step__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
+    </div>
+  </div>
+</section>
+<!-- Features -->
+<section class="features">
+    <h1 class="features__title">Features</h1>
+    <div class="features__line"></div>
+    <div class="features__features-content">
+    <div class="features__feature feature">
+<div class="feature__line">
+  <img class="feature__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidPixelPerfect.png" alt="PixelPerfect">
+<h2 class="feature__title">Pixel perfect output</h2>
+
+</div>
+<p class="feature__text">Crisp, pixel-perfect landing pages without bothering your developers</p>
+<img class="feature__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
+    </div>
+    <div class="features__feature feature">
+      <div class="feature__line">
+        <img class="feature__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidFlexibleResponsive.png" alt="FlexibleResponsive">
+      <h2 class="feature__title">Flexible & responsive</h2>
+      
+      </div>
+      <p class="feature__text">Your web pages will flexibly adapt to different browser window sizes</p>
+      <img class="feature__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
+          </div>
+          <div class="features__feature feature">
+            <div class="feature__line">
+              <img class="feature__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidReusableComponents.png" alt="ReusableComponents">
+            <h2 class="feature__title">Complete code freedom</h2>
+            
             </div>
-            <ul class="page-header__navigation">
-                <li class="nav-item"><a href="#work" class="nav-link">How it works</a></li>
-                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#use" class="nav-link">Use cases</a></li>
-                <li class="nav-item"><a href="#demo" class="nav-link">Schedule a demo</a></li>
-            </ul>
-            <button class="page-header__upload-btn">Upload Sketch</button>
-        </div>
-    </header>
-
-    <!-- Headline  -->
-
-    <section class="headline">
-        <div class="container">
-            <div class="headline__title">Launch websites directly from Sketch</div>
-            <p class="headline__description">Create pixel perfect websites, landing pages & portfolios directly from your Sketch designs</p>
-            <button class="action-btn headline__upload-btn "><span class="upload-btn__small">See VanGoux in action</span> <span class="upload-btn__large">Upload Your Sketch File</span></button>
-            <img class="headline__banner" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationMain.png" alt="banner of header">
-        </div>
-    </section>
-
-    <!-- Upload -->
-
-    <section class="upload"><span class="upload__text">Please visit our desktop site to upload your Sketch designs</span></section>
-
-    <!-- Reviews -->
-
-    <section class="reviews">
-        <div class="container">
-            <div class="review">
-                <div class="review__header">
-                    <img class="face" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-2.png" alt="foto who">
-                    <div class="who">
-                        <div class="name">John Doe</div>
-                        <div class="proffesion">CEO, PrettyDopeDesigns</div>
-                    </div>
-                    <img class="review__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png" alt="review logo">
+            <p class="feature__text">VanGoux gives you source code of your website, so you can add your own logic</p>
+            <img class="feature__decoration" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="Decoration">
                 </div>
-                <div class="review__description"><span class="review__description-small">“Thanks to VanGoux, our senior frontend developer was 70% faster in building React.js components!”</span><span class="review__description-large">“Our senior frontend developer was 70% faster in building React.js components thanks to VanGoux!”</span>                    </div>
-            </div>
+              </div>
+</section>
+<!-- Users -->
+<section class="users">
+  <h1 class="users__title-mobile">Use cases</h1>
+  <h1 class="users__title-desktop">Who is VanGoux for</h1>
+  <div class="users__line"></div>
+  <div class="users__user-column">
 
-            <div class="review">
-                <div class="review__header">
-                    <img class="face" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/TestimonialPicture-1.png" alt="foto who">
-                    <div class="who">
-                        <div class="name">Jane Goodman</div>
-                        <div class="proffesion">Founder, ImpactNation</div>
-                    </div>
-                    <img class="review__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png" alt="review logo">
-                </div>
-                <div class="review__description">“It was awesome to see VanGoux turn our MVP designs into code within minutes.”</div>
-            </div>
-        </div>
-    </section>
+  <div class="users__user user">
+    <h3 class="user__title">UX engineers</h3>
+    <p class="user__text">Build MVPs for your web app as fast as you can design</p>
+  </div>
+  <div class="users__user user">
+    <h3 class="user__title">UX designers</h3>
+    <p class="user__text">Create and share reaslistic prototypes of your website or app</p>
+  </div>
 
-    <!-- Workflow -->
 
-    <section class="workflow" id="work">
-        <div class="container">
-            <h3 class="workflow__title title-cards">How VanGoux works</h3>
-            <div class="line workflow__line "></div>
+  <div class="users__user user">
+    <h3 class="user__title">React devs</h3>
+    <p class="user__text">Auto-generate boilerplate components and design systems</p>
+  </div>
+  <div class="users__user user">
+    <h3 class="user__title">Design agencies</h3>
+    <p class="user__text">Close more clients by showing them how quickly you can build apps</p>
+  </div>
 
-            <div class="workflow-step__wrapper">
-                <div class="workflow__step">
-                    <div class="step">
-                        <div class="number">Step 1 </div>
-                        <div class="name">Upload Sketch</div>
-                        <p class="description">Upload design for your site, landing page or portfolio</p>
-                    </div>
-                    <img class="workflow__icon" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUpload.png" alt="workflow icon">
-                    <img class="workflow__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
-                    <div class="workflow__dashed"></div>
-                </div>
 
-                <div class="workflow__step">
-                    <div class="step">
-                        <div class="number">Step 2</div>
-                        <div class="name">Publish website</div>
-                        <p class="description">You get a publicly shareable link for your website</p>
-                    </div>
-                    <img class="workflow__icon" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png" alt="workflow icon">
-                    <img class="workflow__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
-                    <div></div>
-                </div>
+  <div class="users__user user">
+    <h3 class="user__title">Startups</h3>
+    <p class="user__text">Go to market quickly by spinning up your website and apps</p>
+  </div>
+  <div class="users__user user">
+    <h3 class="user__title">Enterprises</h3>
+    <p class="user__text">Quickly build design systems for your UX and product teams</p>
+  </div>
 
-                <div class="workflow__step">
-                    <div class="step">
-                        <div class="number">Step 3</div>
-                        <div class="name">Add domain</div>
-                        <p class="description">Host it on a new or existing domain name</p>
-                    </div>
-                    <img class="workflow__icon" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png" alt="workflow icon">
-                    <img class="workflow__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
+  </div>
+</section>
+<!-- Purposes -->
+<section class="purposes">
+  <h1 class="purposes__title">What can you do with VanGoux</h1>
+  <div class="purposes__line"></div>
+  <div class="purposes__context">
+      <div class="purpose__row">
+<div class="purpose">
+ 
+  <img class="purpose__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidRealisticPrototype.png" alt="SolidRealisticPrototype">
+<p class="purpose__text">Make realistic prototypes</p>
+</div>
+<div class="purpose">
+  <img class="purpose__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidMVP.png" alt="IconMVP">
+<p class="purpose__text">Build an MVP as quickly as you can design</p>
+</div>
+</div>
+<div class="purpose__row">
+<div class="purpose">
+  <img class="purpose__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidLandingPage.png" alt="LandingPage">
+<p class="purpose__text">Create pixel-perfect landing pages</p>
+</div>
+<div class="purpose">
+  <img class="purpose__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidDesignSystem.png" alt="SolidDesignSystems">
+<p class="purpose__text">Generate a design system for your product</p>
+</div>
+</div>
+  </div>
+</section>
 
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Consultation -->
+<section class="consultation">
+<h2 class="consultation__title">Don’t know how to work with code?</h2>
+<div class="consultation__line"></div>
+<p class="consultation__description">Schedule a call and we'll show you how you could become a  design-to-code rockstar using VanGoux.</p>
+<button class="consultation__button">Schedule a call with us</button>
+<img class="consultation__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationWhiteglove.png" alt="head">
+</section>
 
-    <!-- Features -->
+<!-- Stories -->
+<section class="stories">
+<h2 class="stories__title">Our story</h2>
+<div class="stories__line"></div>
+<div class="stories__container"> 
+<div class="stories__story-card story-card">
+<img class="story-card__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconWhoWeAre.png" alt="IconWhoWeAre">
+<div class="story-card__text">
+<h4 class="story-card__title">Who are we?</h4>
+<p class="story-card__description">Hi! We are Tom & Kay — two passionate engineers of user experience. Building things people want makes us happy! 
+   </p>
+<p class="story-card__description">Kay is a Ex-Googler and Tom is a startup veteran. <br> We started VanGoux because it didn’t make sense to us that UI designs needed to be recreated in code from scratch.</p>
+</div>
+</div>
+<div class="stories__story-card story-card">
+  <img class="story-card__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconStarryNight.png" alt="IconStarryNight">
+  <div class="story-card__text">
+  <h4 class="story-card__title">What’s up with the name?</h4>
+  <p class="story-card__description">VanGoux is pronounced Van Gogh — <br>
+    as in Vincent Van Gogh meets UX.
+     </p>
+  <p class="story-card__description">
+    Vincent  transformed anguish to ecstatic beauty through his art. This name is our way of honoring his profound work.</p>
+    <p class="story-card__description">Check out <a class="story-card__ref" href="#">Dr. Who doing something similar. </a> </p>
+  </div>
+  </div>
+</div>
+</section>
 
-    <section class="features" id="features">
-        <div class="container">
-            <div class="features__title title-cards">Features</div>
-            <div class="line features__line"></div>
-
-            <div class="features__list">
-                <div class="feature">
-                    <div class="feature__header">
-                        <img class="card__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidPixelPerfect.png" alt="pixel perfect">
-                        <div class="feature__title">Pixel perfect output</div>
-                    </div>
-                    <p class="feature__description">Crisp, pixel-perfect landing pages without bothering your developers</p>
-                    <img class="features__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
-                </div>
-
-                <div class="feature">
-                    <div class="feature__header">
-                        <img class="card__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidFlexibleResponsive.png" alt="flexible and responsive">
-                        <div class="feature__title ">Flexible & responsive</div>
-                    </div>
-                    <p class="feature__description">Your web pages will flexibly adapt to different browser window sizes</p>
-                    <img class="features__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
-                </div>
-
-                <div class="feature">
-                    <div class="feature__header">
-                        <img class="card__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidReusableComponents.png" alt="feature components">
-                        <div class="feature__title ">Complete code freedom</div>
-                    </div>
-                    <p class="feature__description">VanGoux gives you source code of your website, so you can add your own logic</p>
-                    <img class="features__squar" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png" alt="little squer">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- USERS -->
-
-    <section class="users" id="use">
-        <div class="container">
-            <div class="title-cards"><span class="title-cards-small">Use cases</span> <span class="title-cards-large">Who is VanGoux for</span></div>
-            <div class="line user__line"></div>
-
-            <div class="users__card-wrapper">
-                <div class="user">
-                    <div class="user__title title-card">UX engineers</div>
-                    <p class="user__description">Build MVPs for your web app as fast as you can design</p>
-                </div>
-
-                <div class="user">
-                    <div class="user__title title-card">UX designers</div>
-                    <p class="user__description">Create and share reaslistic prototypes of your website or app</p>
-                </div>
-
-                <div class="user">
-                    <div class="user__title title-card"><span class="user__title-small">React devs</span><span class="user__title-large">React developers</span></div>
-                    <p class="user__description">Auto-generate boilerplate components and design systems</p>
-                </div>
-
-                <div class="user">
-                    <div class="user__title title-card">Design agencies</div>
-                    <p class="user__description">Close more clients by showing them how quickly you can build apps</p>
-                </div>
-
-                <div class="user">
-                    <div class="user__title title-card">Startups</div>
-                    <p class="user__description">Go to market quickly by spinning up your website and apps</p>
-                </div>
-
-                <div class="user">
-                    <div class="user__title title-card">Enterprises</div>
-                    <p class="user__description">Quickly build design systems for your UX and product teams</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Purposes -->
-
-    <section class="purposes" id="demo">
-        <div class="container">
-            <div class="title-cards purposes__title"><span class="purposes__title-small">What can you build with VanGoux</span><span class="purposes__title-large">What can you do with VanGoux</span> </div>
-            <div class="line purposes__line"></div>
-            <div class="purposes__card-wrapper">
-                <div class="purpose">
-                    <img class="purpose__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidRealisticPrototype.png" alt="purpose logo"></img>
-                    <div class="purpose__description">Make realistic prototypes</div>
-                </div>
-                <div class="purpose">
-                    <img class="purpose__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidMVP.png" alt="purpose logo"></img>
-                    <div class="purpose__description">Build an MVP as quickly as you can design</div>
-                </div>
-                <div class="purpose">
-                    <img class="purpose__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidLandingPage.png" alt="purpose logo"></img>
-                    <div class="purpose__description">Create pixel-perfect landing pages</div>
-                </div>
-                <div class="purpose">
-                    <img class="purpose__logo" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconSolidDesignSystem.png" alt="purpose logo"></img>
-                    <div class="purpose__description">Generate a design system for your product</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONSULTATION -->
-
-    <section class="consultation">
-        <div class="container">
-            <div class="consultation__title">Don’t know how to work with code?</div>
-            <div class="consultation__line line"></div>
-            <p class="consultation__description">Schedule a call and we'll show you how you could become a design-to-code rockstar using VanGoux.</p>
-            <button class="consultation__button">Schedule a call with us</button>
-            <img class="consultation__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationWhiteglove.png" alt="decoration">
-        </div>
-    </section>
-
-    <!-- STORIES -->
-
-    <section class="stories">
-        <div class="container">
-            <div class="title-cards">Our story</div>
-            <div class="line stories__line"></div>
-            <div class="stories__card-wrapper">
-                <div class="story-card">
-                    <div class="card__header">
-                        <img class="card__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconWhoWeAre.png" alt="Icon Who">
-                        <div class="card__title">Who are we?</div>
-                    </div>
-                    <p class="card__description">
-                        <span class="card__description-part-up"> Hi! We are Tom & Kay — two passionate engineers of user experience. Building things people want makes us happy!</span>
-                        <span class="card__description-part-down">Kay is a Ex-Googler and Tom is a startup veteran. We started VanGoux because it didn’t make se us that when a designer creates a design, engineershave to code i scratch.</span> </p>
-                </div>
-
-                <div class="story-card">
-                    <div class="card__header">
-                        <img class="card__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconStarryNight.png" alt="icon night">
-                        <div class="card__title">What’s up with the name?</div>
-                    </div>
-                    <p class="card__description">
-                        <span class="card__description-part-up">VanGoux is pronounced Van Gogh — as in Vincent Van Gogh meets UX.</span>
-                        <span class="card__description-part-middle"> Vincent transformed anguish to ecstatic beauty through his art. This name is our way of honoring his profound work.</span>
-                        <span class="card__description-part-down">Check out <span class="card__description-part-down__line"> Dr. Who doing something similar.</span></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PAGE FOOTER -->
-
+    <!-- Footer -->
     <footer class="page-footer">
-        <div class="footer-logo">
-            <img class="footer-logo__img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="footer logo"></img>
-            <div class="footer-logo__title">Site made with VanGoux</div>
-        </div>
-        <ul class="footer__nav">
-            <li class="nav-item"><a href="#" class="nav-item__link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Feedback</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Join our Slack</a></li>
-            <li class="nav-item"><a href="#" class="nav-item__link">Terms</a></li>
-        </ul>
-        <div class="footer__icons">
-            <a href="#" class="footer__icons-facebook"><img class="icon-facebook" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconFacebook.png" alt="facebook"></a>
-            <a href="#" class="footer__icons-insta"><img class="icon-instagram" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconInstagram.png" alt="insta"></a>
-        </div>
-        <img class="footer__logo-man" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/VincentIllustration.png" alt="footer logo man">
-    </footer>
+      <div class="page-footer__container">
+<div class="page-footer__footer-logo footer-logo">
+  <img class="footer-logo__image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/LogoSmallSolid.png" alt="logoSmall">
+<p class="footer-logo__text">Site made with VanGoux</p>
+</div>
+<nav class="page-footer__navigation navigation">
+    <a href="#" class="navigation__menulink">How it works</a>
+    <a href="#" class="navigation__menulink">Features</a>
+    <a href="#" class="navigation__menulink">Use cases</a>
+    <a href="#" class="navigation__menulink">Schedule a demo</a>
+  </nav>
+<img class="page-footer__facebook" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconFacebook.png" alt="Facebook">
+    <img class="page-footer__instagram" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconInstagram.png" alt="Instagram">
+  
+<img class="page-footer__vincent" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/VincentIllustration.png" alt="VincentIllustration"> 
+</div>
+</footer>
+</div>
+</div>
 </body>
-
 </html>

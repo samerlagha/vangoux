@@ -1,0 +1,101 @@
+.workflow{
+    margin: 120px 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    @include for-large-up {
+        margin-left: 0;
+        padding-left: 160px;
+        }
+    &__title{
+        font-size: 30px;
+line-height: 60px;
+text-transform: uppercase;
+font-weight: 400;
+margin: 0;
+    }
+    &__line{
+        width: 80px;
+        display: block;
+        border-bottom: solid 2px $text-color-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+        margin-top: 10px;
+        @include for-large-up {
+            margin-left: -40px;
+            }
+       
+    }
+    &__workflow-content{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+        @include for-large-up {
+            flex-direction: row;
+            }
+    }
+}
+.workflow-step{
+    padding: 40px;
+    position: relative;
+    width: 520px;
+    height: 180px;
+    margin-top: 48px;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    background-color: $text-color-white;
+    @include for-large-up {
+      width: 320px;
+      height: 220px;
+ 
+      &:last-child{
+          margin-right: 0;
+          margin-top: 128px;
+      }
+      &:nth-child(3){
+          margin-top: 88px;
+      }
+        }
+        &__connector-line{
+            display: none;
+            @include for-large-up {
+                display: block;
+                width: 70px;
+                height: 1px;
+                border-bottom: 2px dashed $text-color-blue;
+                margin-top: 148px;
+                &:nth-child(4){
+                    margin-top: 187px;
+                }
+            }
+        }
+    &__title{
+        font-size: 12px;
+line-height: 20px;
+margin: 0;
+    }
+&__subtitle{
+    font-size: 18px;
+line-height: 40px;
+text-transform: uppercase;
+color: $text-color-blue;
+margin: 0;
+    }
+    &__text{
+        font-size: 16px;
+line-height: 30px;
+margin: 0;
+    }
+    &__image{
+        width: 40px;
+        height: 36px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    &__decoration{
+        width: 25px;
+height: 25px;
+position: absolute;
+bottom: 0;
+right: 0;
+    }
+}

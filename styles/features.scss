@@ -1,0 +1,106 @@
+.features{
+    margin: 120px 60px 0;
+    display: flex;
+    flex-direction: column;
+    @include for-large-up {
+        margin-left: 160px;
+        }
+    &__title{
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__line{
+        width: 80px;
+        display: block;
+        border-bottom: solid 2px $text-color-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+        margin-top: 10px;
+        margin-bottom: 48px;
+        @include for-large-up {
+            margin-left: -40px;
+            }
+    }
+    &__features-content{
+        display: flex;
+        flex-direction: column;
+        @include for-large-up {
+        flex-direction: row;
+        }
+    }
+    &__feature{
+        display: flex;
+        flex-direction: column;
+        max-width: 520px;
+       height: 260px;
+        margin-bottom: 60px;
+        @include for-large-up {
+            width: 320px;
+height: 290px;
+margin-right: 74px;
+&:last-child{
+    margin-right: 0;
+    margin-top: 128px;
+}
+&:nth-child(2){
+    margin-top: 88px;
+}
+            }
+    }
+}
+.feature{
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    position: relative;
+    background: $text-color-white;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+   &__line{
+       display: flex;
+       background-color: $background-color-gray;
+   }
+   &__image{
+       /* width: 80px;
+       height: 80px; */
+       width: 120px;
+        height: 120px;
+       @include for-large-up {
+        
+   }
+ 
+}
+   &__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+    display:flex;
+       align-items: center;
+    @include for-large-up {
+       line-height: 30px;
+       margin: 20px;
+       
+   }
+   }
+   &__text{
+    
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 40px;
+    @include for-large-up {
+       margin: 40px;
+       padding: 0;
+    }
+   }
+   &__decoration{
+    width: 25px;
+height: 25px;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+}

@@ -1,0 +1,86 @@
+.page-footer{
+ padding-top: 100px;
+ padding-left: 40px;
+ height: 130px;
+ display: flex;
+ align-items: center;
+ @include for-large-up {
+   padding-left: 160px;
+   padding-bottom: 0;
+   
+}
+    &__container{
+        display: flex;
+        align-items: center;
+        background-color: $background-color-lightgray;
+      
+        
+    }
+    &__navigation{
+        display: none;
+        @include for-large-up {
+            display: block;
+            margin-left: 70px;
+            
+         }
+    }
+    &__footer-logo{
+        display: flex;
+        align-items: center;
+    }
+    &__facebook{
+        height: 20px;
+        width: 10px;
+        margin-left: 70px;
+    }
+    &__instagram{
+        margin-left: 38px;
+    }
+    &__vincent{
+        width: 60px;
+        height: 55px;
+        flex-shrink: 0;
+        margin-top: 70px;
+        margin-left: 117px;
+        @include for-large-up {
+            width: 100px;
+            height: 90px;
+            
+         }
+        
+    }
+}
+.footer-logo{
+    &__image{
+        width: 50px;
+        height: 50px;
+    }
+    &__text{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #1968FC;
+margin: 0;
+background-color: $background-color-lightblue;
+    }
+}
+.navigation{
+    &__menulink{
+      font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: $text-color-darkblack;
+text-decoration: none;
+padding-right: 60px;
+word-wrap: normal;
+cursor: pointer;
+&:last-child{
+    padding-right: 0;
+}
+  }
+}
