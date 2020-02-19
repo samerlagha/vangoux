@@ -1,7 +1,7 @@
 .headline {
-    display: flex;
     position: relative;
     z-index: 2;
+    display: flex;
     justify-content: space-between;
     width: 1120px;
     height: 552px;
@@ -9,7 +9,7 @@
     &__img {
         position: relative;
         z-index: 1;
-         right: 79px;
+        right: 79px;
         min-width: 599px;
         height: 502px;
         background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationMain.png');

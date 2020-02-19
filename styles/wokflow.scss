@@ -4,7 +4,7 @@
     justify-content: space-around;
     width: 1165px;
     height: 415px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 @include small_device {
@@ -15,9 +15,9 @@
     }
 }
 
-.head-title {
+.how {
+    top: -25px;
     position: relative;
-    top:-25px;
     width: 1120px;
     & span {
         font-style: normal;
@@ -37,7 +37,7 @@
 }
 
 @include small_device {
-    .head-title {
+    .how {
         width: 520px;
         & p {
             left: 0;
@@ -48,8 +48,61 @@
 .blocks {
     position: relative;
     display: flex;
-
-   
+    & .step3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: -30px;
+        right: -154px;
+        &_content {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                & span:nth-child(1) {
+                    width: 200px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                & span:nth-child(2) {
+                    width: 200px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: $main-blue;
+                    text-transform: uppercase;
+                }
+            }
+            &_img {
+                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 36px;
+            }
+        }
+        & .text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .decor {
+            position: absolute;
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+            width: 25px;
+            height: 25px;
+            right: -5px;
+            bottom: -5px;
+        }
+    }
     & .step1 {
         display: flex;
         flex-direction: column;
@@ -176,64 +229,10 @@
         border-top: 2px dashed $main-blue;
         right: -73px;
         top: 50%;
-
-    }
-    & .step3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        bottom: -30px;
-        right: -154px;
-        &_content {
-            margin-top: 40px;
-            display: flex;
-            justify-content: space-between;
-            width: 250px;
-            &_text {
-                display: flex;
-                flex-direction: column;
-                & span:nth-child(1) {
-                    width: 200px;
-                    font-size: 12px;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                }
-                & span:nth-child(2) {
-                    width: 200px;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 18px;
-                    line-height: 40px;
-                    color: $main-blue;
-                    text-transform: uppercase;
-                }
-            }
-            &_img {
-                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                width: 40px;
-                height: 36px;
-            }
-        }
-        & .text {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 30px;
-            width: 250px;
-            margin-bottom: 20px;
-        }
-        .decor {
-            position: absolute;
-            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
-            width: 25px;
-            height: 25px;
-            right: -5px;
-            bottom: -5px;
-        }
+        ;
     }
 }
+
 @include small_device {
     .blocks {
         flex-direction: column;

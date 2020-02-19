@@ -1,34 +1,42 @@
-.page-header{
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png');
+    background-repeat: no-repeat;
+}
 
+.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1120px;
     height: 50px;
-    margin-top: 30px;
-
-    &__navigation{
-         display: flex;
-         align-items: center;
-        &_lists{
-              display: flex;
+    margin: 30px 0 0 0;
+    &__navigation {
+        display: flex;
+        align-items: center;
+        &_lists {
+            display: flex;
             justify-content: space-between;
             list-style-type: none;
             width: 540px;
             margin: 0;
             padding: 0;
-
-            &_list{
+            &_list {
                 width: 120px;
+                font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
+                font-family: $main-font;
                 color: $main-black;
-
             }
         }
-
-        &_blue-button{
+        &_blue-button {
             width: 180px;
             height: 50px;
             box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
@@ -43,7 +51,7 @@
             color: white;
         }
     }
-} 
+}
 
 .logo {
     display: flex;
@@ -66,7 +74,11 @@
 }
 
 @include small_device {
-   
+    .page {
+        width: 640px;
+        background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+        ;
+    }
     .page-header {
         width: 640px;
         &__navigation_lists {

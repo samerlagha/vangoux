@@ -17,7 +17,8 @@
     position: relative;
     width: 1160px;
     & span {
-
+        font-style: normal;
+        font-weight: normal;
         font-size: 30px;
         line-height: 60px;
         text-transform: uppercase;
@@ -47,6 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     .purpose {
         width: 540px;
         height: 80px;
@@ -65,7 +67,7 @@
 .make {
     display: flex;
     align-items: center;
-   
+    align-self: flex-start;
     &_image {
         width: 80px;
         height: 80px;
@@ -90,7 +92,7 @@
 .build {
     display: flex;
     align-items: center;
-   
+    align-self: flex-start;
     &_image {
         width: 80px;
         height: 80px;
@@ -114,7 +116,7 @@
 
 .create {
     display: flex;
-    
+    align-items: center;
     &_image {
         width: 80px;
         height: 80px;
@@ -132,7 +134,7 @@
 
 .generate {
     display: flex;
-    
+    align-items: center;
     &_image {
         width: 80px;
         height: 80px;
