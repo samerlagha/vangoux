@@ -1,0 +1,94 @@
+.page-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 61px;
+    background-color: $background-color-footer;
+    width: 640px;
+    height: 130px;
+    @include for-large-up {
+        width: 1440px;
+        margin-top: 50px;
+    }
+    .footer-logo {
+        display: flex;
+        margin-left: 40px;
+        width: 250px;
+        height: 50px;
+        @include for-large-up {
+            margin-left: 160px;
+        }
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: $text-color-blue;
+            background: rgba(25, 104, 252, 0.05);
+        }
+    }
+    .footer__nav {
+        display: none;
+        @include for-large-up {
+            display: flex;
+            margin-left: 70px;
+            .nav-item {
+                list-style-type: none;
+                height: 50px;
+                width: 120px;
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 50px;
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .footer__icons {
+        display: flex;
+        &-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            width: 50px;
+            height: 50px;
+            .icon-facebook {
+                width: 10px;
+                height: 20px;
+            }
+        }
+        &-insta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            .icon-instagram {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .footer__logo-man {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 60px;
+        height: 55px;
+        @include for-large-up {
+            width: 100px;
+            height: 90px;
+            right: 160px;
+        }
+    }
+}

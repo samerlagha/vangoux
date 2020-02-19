@@ -1,0 +1,22 @@
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1000px;
+    text-align: center;
+    width: 640px;
+    height: 180px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+    &__text {
+        margin: 0 60px;
+    }
+    @include for-large-up {
+        display: none;
+    }
+}

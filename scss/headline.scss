@@ -1,0 +1,54 @@
+.headline {
+    .container {
+        position: relative;
+    }
+    &__title {
+        margin: 80px 0 0 30px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        @include for-large-up {
+            margin: 150px 0 0 0;
+            width: 600px;
+            height: 120px;
+        }
+    }
+    &__description {
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 40px;
+        @include for-large-up {
+            margin: 20px 0 0 0;
+            width: 600px;
+            height: 80px;
+        }
+    }
+    &__upload-btn {
+        margin: 40px 0 0 30px;
+        .upload-btn__small {
+            display: block;
+        }
+        .upload-btn__large {
+            display: none;
+        }
+        @include for-large-up {
+            margin: 40px 0 0 0;
+            .upload-btn__small {
+                display: none;
+            }
+            .upload-btn__large {
+                display: block;
+            }
+        }
+    }
+    &__banner {
+        margin-top: 80px;
+        @include for-large-up {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            margin-top: 0;
+        }
+    }
+}

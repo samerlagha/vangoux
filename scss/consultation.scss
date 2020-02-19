@@ -1,0 +1,65 @@
+.consultation {
+    position: relative;
+    margin-top: 60px;
+    padding-top: 60px;
+    background-color: $text-color-blue;
+    width: 640px;
+    height: 480px;
+    @include for-large-up {
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 1440px;
+        height: 450px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @include for-large-up {
+            width: fit-content;
+        }
+    }
+    &__line {
+        margin-top: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 0px #6A9EFF;
+    }
+    &__description {
+        margin-top: 38px;
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFFFFF;
+        @include for-large-up {
+            margin-top: 48px;
+            width: 620px;
+            height: 80px;
+        }
+    }
+    &__button {
+        margin-top: 40px;
+        width: 320px;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
+        border: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: $text-color-blue;
+    }
+    &__img {
+        display: none;
+        @include for-large-up {
+            position: absolute;
+            display: block;
+            right: 0;
+            top: 20px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.workflow {
+    margin-top: 120px;
+    &__line {
+        margin-top: 10px;
+        margin-bottom: 48px;
+        @include for-large-up {
+            transform-t: 50%;
+            margin-bottom: 38px;
+        }
+    }
+    &-step__wrapper {
+        @include for-large-up {
+            display: flex;
+            justify-content: space-between;
+        }
+        .workflow__step {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background-color: #fff;
+            @include for-large-up {
+                width: 320px;
+                height: 220px;
+                box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+                margin-bottom: 0;
+                &:nth-child(2) {
+                    margin-top: 40px;
+                }
+                &:last-child {
+                    margin-top: 80px;
+                }
+            }
+            .step {
+                padding-top: 40px;
+                .number {
+                    margin: 0 0 0 40px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                .name {
+                    margin-left: 40px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: $text-color-blue-work;
+                }
+                .description {
+                    margin: 0;
+                    padding: 0;
+                    margin: 10px 0 40px 40px;
+                    font-size: 16px;
+                    line-height: 30px;
+                    @include for-large-up {
+                        margin: 20px 0 40px 40px;
+                        width: 240px;
+                        height: 60px;
+                    }
+                }
+            }
+            .workflow__icon {
+                margin: 40px 40px 0 0;
+                @include for-large-up {
+                    margin-top: 40px;
+                    margin-left: -40px;
+                }
+            }
+            .workflow__squar {
+                position: absolute;
+                bottom: -5px;
+                right: -5px;
+            }
+            .workflow__dashed {
+                position: absolute;
+                top: 182px;
+                left: 59px;
+                width: 1px;
+                height: 40px;
+                border: 2px dashed $text-color-blue;
+                @include for-large-up {
+                    width: 70px;
+                    height: 1px;
+                    left: 320px;
+                    top: 110px;
+                    transform: translate(0, -50%)
+                }
+            }
+        }
+    }
+}

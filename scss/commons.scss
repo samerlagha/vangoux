@@ -1,0 +1,54 @@
+.container {
+    width: 540px;
+    margin: 0 auto;
+    @include for-large-up {
+        width: 1120px;
+    }
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background-color: $text-color-blue;
+    border: none;
+    box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+    text-transform: uppercase;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background: $text-color-blue;
+    box-shadow: 0px 2px 0px #D1E1FE;
+    @include for-large-up {
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+}
+
+.title-card {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #1967FA;
+}
+
+.title-cards {
+    margin: 0;
+    padding: 0;
+    width: 520px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+}

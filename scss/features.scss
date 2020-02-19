@@ -1,0 +1,80 @@
+.features {
+    margin-top: 125px;
+    @include for-large-up {
+        margin-top: 120px;
+    }
+    &__line {
+        margin-top: 10px;
+    }
+    &__list {
+        padding-top: 48px;
+        @include for-large-up {
+            display: flex;
+            justify-content: space-between;
+        }
+        .feature {
+            position: relative;
+            margin-bottom: 60px;
+            width: 520px;
+            height: 200px;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+            @include for-large-up {
+                width: 320px;
+                height: 290px;
+                &:nth-child(2) {
+                    margin-top: 40px;
+                }
+                &:last-child {
+                    margin-top: 80px;
+                }
+            }
+            &__header {
+                display: flex;
+                height: 80px;
+                background-color: $background-color-white;
+                @include for-large-up {
+                    height: 120px;
+                }
+                .card__logo {
+                    width: 80px;
+                    height: 80px;
+                    @include for-large-up {
+                        height: 120px;
+                        width: 120px;
+                    }
+                }
+            }
+            &__title {
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 40px;
+                @include for-large-up {
+                    line-height: 30px;
+                }
+            }
+            &__description {
+                display: flex;
+                margin: auto;
+                margin-top: 30px;
+                width: 440px;
+                height: 60px;
+                font-size: 16px;
+                line-height: 30px;
+                @include for-large-up {
+                    margin: 40px;
+                    width: 240px;
+                    height: 90px;
+                }
+            }
+            .features__squar {
+                position: absolute;
+                bottom: -5px;
+                right: -5px;
+            }
+        }
+    }
+}

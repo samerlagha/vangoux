@@ -1,5 +1,0 @@
-@mixin small_device {
-    @media screen and (max-width: 1024px) {
-        @content;
-    }
-}
